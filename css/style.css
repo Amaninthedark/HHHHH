@@ -1,0 +1,170 @@
+*{ font-family:"微软雅黑" ;}
+/**************************************homepage************************/
+
+.homepage-header-search{
+	color: white;
+}
+.homepage-conten-headline{
+
+	width: 100%;
+}
+.headlin-top{
+	width: 100%;
+	height: 40px;
+	padding: 10px;
+	background-color: white;
+}
+.mui-table-view-cell-headlin:after {
+  height: 0px!important;
+}
+.headlin-bottom ul li{
+	font-size: 14px;
+}
+.homepage-conten-video{
+	margin-top: 20px;
+}
+.video-content,.Recommendedarticles-content{
+	
+    margin: 0 auto;
+    margin-top: 2px;
+    width: 98%;
+    height: 100px;
+}
+.video-content-left{
+	width: 70%;
+	float: left;
+	
+    height: 100px;
+    padding-left: 5px;
+}
+.video-content-left h5{
+	font-family: "微软雅黑";
+	color: #000000;
+	line-height: 20px;
+}
+.video-content-left h6{
+	line-height: 15px;
+}
+.video-content-right{
+	width: 25%;
+	float: right;
+	
+     height: 89px;
+     margin: 5px 5px 5px 5px;
+}
+.video-content-right img{
+	width: 100%;
+	height: 100px;
+	
+}
+.video-content-big{
+	
+	width: 100%;
+	height: 300px; 
+}
+.video-content-big-top{
+	margin: 10px;
+	width: 95%;
+	height: 70%;
+	
+}
+.video-content-big-top img{
+	width: 100%;
+	height: 100%;
+}
+.video-content-big-bottom{
+	
+	padding: 10px;
+	width: 100%;
+	height: 25%;
+}
+.video-content-big-bottom h5{
+	color: black;
+}
+/******************************************videos*******************************************/
+.videos-header{
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+.video-content{ 
+	width: 100%;
+
+
+
+}
+.videos-content-video{
+	width: 100%;
+	height: 40%;
+	
+	
+}
+.videos-content-video video{
+	width: 100%;
+	
+}
+.videos-content-article{
+	width: 100%;
+	
+	height: 200px;
+	
+}
+.videos-content-article-top{
+	height: 50%;
+	border-bottom: 1px solid #DDDDDD;
+}
+.mui-icon-pulldown{
+	display: none;
+}
+.mui-spinner{
+	display: none;
+}
+.videoso-article{
+	
+	width: 100%;
+}
+
+.videoso-article-left{
+	width: 33%;
+	height: 100%;
+	 
+	 float: left; 
+ 
+}
+.videoso-article-bottom{
+	height: 120px;
+}
+.videoso-article-left-icon{
+	width: 80px;
+	height: 80px;
+	padding: 10px;
+}
+.videoso-Catalog-top{
+	width: 100%;
+	height: 50px;
+	padding: 5px;
+}
+.videoso-Catalog-bottom{
+	width: 100%;
+
+	height: 60px;
+}
+.videoso-Catalog-bottom-left{
+	width: 30%;
+	height: 60px;
+
+	float:left;
+}
+.videoso-Catalog-bottom-left img{
+	width: 100%;
+	height: 100%;
+	
+}
+.videoso-Catalog-bottom-right{
+	width: 70%;
+	height: 60px;
+
+	float: left;
+	padding: 3%;
+}
+/**********************************************************sort*************************************/
+

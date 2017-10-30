@@ -1,0 +1,98 @@
+{
+  "3/videos.html": {
+    "resources": [
+      "3/fonts/mui.ttf",
+      "3/js/mui.min.js",
+      "3/css/style.css",
+      "3/images/lunbo1.jpg",
+      "3/js/castapp.js",
+      "3/videoso.html",
+      "3/css/mui.min.css"
+    ],
+    "refer": [
+      "3/videoso.html"
+    ]
+  },
+  "3/videoso.html": {
+    "resources": [
+      "3/images/video.png",
+      "3/js/mui.picker.js",
+      "3/css/mui.picker.min.css",
+      "3/js/mui.poppicker.js",
+      "3/fonts/mui.ttf",
+      "3/css/style.css",
+      "3/images/lunbo1.jpg",
+      "3/js/castapp.js"
+    ],
+    "refer": []
+  },
+  "3/22.html": {
+    "resources": [
+      "3/js/mui.min.js",
+      "3/videoso.html",
+      "3/css/mui.min.css"
+    ],
+    "refer": [
+      "3/videoso.html"
+    ]
+  },
+  "index.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "videoso.html": {
+    "resources": [
+      "js/castapp.js",
+      "js/mui.picker.js",
+      "images/video.png",
+      "js/mui.min.js",
+      "js/mui.poppicker.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/style.css",
+      "images/lunbo1.jpg",
+      "css/mui.picker.min.css"
+    ],
+    "refer": []
+  },
+  "homepage.html": {
+    "resources": [
+      "images/video.png",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "images/lunbo3.jpg",
+      "css/style.css",
+      "images/lunbo1.jpg",
+      "images/lunbo2.jpg",
+      "js/castapp.js",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "homepagepu.html": {
+    "resources": [
+      "js/castapp.js",
+      "homepage.html",
+      "css/mui.min.css",
+      "js/mui.js",
+      "fonts/mui.ttf"
+    ],
+    "refer": [
+      "homepage.html"
+    ]
+  },
+  "sort.html": {
+    "resources": [
+      "images/video.png",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/style.css",
+      "images/lunbo1.jpg"
+    ]
+  }
+}
