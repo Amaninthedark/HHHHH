@@ -166,5 +166,36 @@
 	float: left;
 	padding: 3%;
 }
-/**********************************************************sort*************************************/
+/**********************************************************setting*************************************/
+.setting-conten{
+	margin-top:44px;
+}
+.setting-ul{
+	margin-top:2%;
+}
+.setting-personal{
+	padding: 3%;
+	width: 100%;
+	height: 130px;
+	background-color: white;
+	border: 1px solid red;
+}
+.setting-personal-Headportrait{
+	width: 100px;
+	height: 100px;
+	float: left;
+	
+}
+.setting-personal-Headportrait img{
+	width: 100%;
+	height: 100%;
+	border-radius: 100px;
+	
+}
+.setting-personal-words{
+	
+	padding: 5%;
+	height: 100px;
+	float: left;
+}
 
