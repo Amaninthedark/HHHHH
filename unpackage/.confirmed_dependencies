@@ -93,6 +93,25 @@
       "css/mui.min.css",
       "css/style.css",
       "images/lunbo1.jpg"
+    ],
+    "refer": []
+  },
+  "setting.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/style.css",
+      "img/logo.png"
+    ],
+    "refer": []
+  },
+  "message.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/style.css"
     ]
   }
 }

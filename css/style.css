@@ -198,4 +198,38 @@
 	height: 100px;
 	float: left;
 }
-
+/**********************************************************setting*************************************/
+.message-conten{
+	margin-top: 44px;
+	width: 100%;
+	border: 1px solid red;
+}
+.message-button{
+	width: 100%;
+	border: 1px solid blue;
+	text-align:center;
+	padding:2% 0; 
+}
+.message-btn{
+	font-family: "微软雅黑" !important;
+	
+}
+.message-ls{
+	
+	
+}
+.message-ls li{
+	height:20%;
+}
+.message-ls-left{
+	float: left;
+	height: 100%;
+	
+	width: 90%;
+}
+.message-ls-right{
+margin-top:5%;
+	float: right;
+	width: 10%;
+	
+}
