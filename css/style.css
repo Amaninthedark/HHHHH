@@ -198,7 +198,7 @@
 	height: 100px;
 	float: left;
 }
-/**********************************************************setting*************************************/
+/**********************************************************message*************************************/
 .message-conten{
 	margin-top: 44px;
 	width: 100%;
@@ -228,8 +228,43 @@
 	width: 90%;
 }
 .message-ls-right{
-margin-top:5%;
+	
+	text-align: center;
+	margin-top:30px;
 	float: right;
+	
 	width: 10%;
 	
+}
+.message-ls-conten{
+
+	width: 100%;
+	height: 80px;
+	
+	
+}
+/**********************************************************personaldata*************************************/
+.personaldata-top{
+	margin-top:44px;
+	width: 100%;
+	padding:10%;
+	height: 200px;
+}
+.personaldata-top-img{
+	margin: 0 auto;
+	width: 100px;
+	height: 100px;
+}
+.personaldata-top-img img{
+	width: 100%;
+	height: 100%;	
+	border-radius: 100px;
+}
+.personaldata-top-name{
+	text-align: center;
+}
+.perul:after{
+	
+    background-color: #fff;
+
 }

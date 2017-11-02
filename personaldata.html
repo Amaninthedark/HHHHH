@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/mui.picker.min.css" />
+		
+	<body style="height: 100%;">
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">个人资料</h1>
+		  <a class="mui-btn mui-btn-link mui-pull-right">保存</a>
+		</header> 
+			<div id="pullrefresh" class="mui-scroll-wrapper" style="width: 100% !important; background: coral;">
+					<div class="mui-scroll"style="width: 100% !important;"> 
+		<div id='per' class="personaldata-conter"   style=" background: white; ">
+			<div class="personaldata-top" style="background:coral;">
+				<div class="personaldata-top-img">
+					<img src="img/logo.png">
+				</div> 
+				<div class="personaldata-top-name" style="color: white; margin: 2%;">
+					Scott 
+				</div>
+			</div>
+			<ul class="mui-table-view perul">
+				<li class="mui-table-view-cell" style="height: 60px;">
+					<div class="personaldata-sp" style="float: left; margin-top:2%;" >
+						昵称 :
+					</div>
+					<div class="personaldata-text" style="float: left; width: 80%;  ">
+						<input  type="text" style="border: 0px;" value="Scott" />
+					</div>
+				</li>
+				<li class="mui-table-view-cell" style="height: 60px;" >
+					<div class="personaldata-sp" style="float: left; margin-top:2%;" >
+						性别 :
+					</div>
+					<div class="personaldata-text" style="float: left; width: 80%;  ">
+							<input  type="text" style="border: 0px;" value="" id='bt'  readonly="true"/>
+					</div>
+				</li>
+				<li class="mui-table-view-cell" style="height:100%;"  >
+					<div class="personaldata-sp" style="float: left; margin-top:2%;" >
+						介绍 :
+					</div>
+					<div class="personaldata-text" style="float: left; width: 80%;  ">
+							<textarea name="text-text" rows="5" cols="5" style="border: 0px;" placeholder="限制字数80字"></textarea>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>	
+</div>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript" src="js/mui.picker.js" ></script>		
+		<script type="text/javascript" src="js/mui.poppicker.js" ></script>
+		<script type="text/javascript">	
+			mui.init({ 
+				pullRefresh: {
+		container: '#pullrefresh',
+		down: {
+			contentdown : " ",//可选，在下拉可刷新状态时，下拉刷新控件上显示的标题内容
+		    contentover : " ",//可选，在释放可刷新状态时，下拉刷新控件上显示的标题内容
+		    contentrefresh : " ",//可选，正在刷新状态时，下拉刷新控件上显示的标题内容
+			callback: downFn // 下拉执行函数
+		},  
+		up: {
+			contentinit:"",
+				 contentrefresh : "",//可选，正在加载状态时，上拉加载控件上显示的标题内容
+  			    contentnomore:"",//可选，请求完毕若没有更多数据时显示的提醒内容；
+			callback: upFn // 上拉执行函数 
+		}
+	} 
+});
+		function downFn(){
+			
+			mui('#pullrefresh').pullRefresh().endPulldownToRefresh(); 
+		}
+		function upFn(){ 
+	    	
+			mui('#pullrefresh').pullRefresh().endPulldownToRefresh(); 
+		} 
+		
+			
+			
+			var cH=document.getElementById('per');
+			cH.style.height=window.screen.height+"px";
+		
+			document.getElementById('bt').addEventListener("click", function() {
+				
+			    var roadPick = new mui.PopPicker();//获取弹出列表组建，假如是二联则在括号里面加入{layer:2}
+		                roadPick.setData([{//设置弹出列表的信息，假如是二联，还需要一个children属性
+		                    value: "1",
+		                    text: "男"
+		                    
+		                }, {
+		                    value: "2",
+		                    text: "女"
+		                }]);
+		       roadPick.show(function(item) {//弹出列表并在里面写业务代码
+		                 var itemCallback=roadPick.getSelectedItems();
+		                 document.getElementById('bt').value=itemCallback[0].text;
+		                });
+            });
+		</script>
+	</body>
+
+</html>
