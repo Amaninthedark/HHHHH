@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title"></h1>
+		</header>
+			<div id="pullrefresh" class="mui-content mui-scroll-wrapper" style="width: 100% !important;">
+					<div class="mui-scroll"style="width: 100% !important;"> 
+		<div class="article-conten"> 
+			<div class="article-conten-text" align="center" style="padding-top: 5%; background-color: white;" >
+				<h2 >翻译解释</h2>
+				<h5 style="margin-top: 20px;">吕硁硁</h5>
+				<div class="article-conten-text-bommon" style="padding: 2%; " align="left" >
+					<h4 style="line-height: 30px !important;">翻译是在准确、通顺的基础上，把一种语言信息转变成另一种语言信息的行为。翻译是将一种相对陌生的
+					表达方式，转换成相对熟悉的表达方式的过程。其内容有语言、文字、图形、符号和视频翻译。其中，在甲语和乙语中，
+					“翻”是指的这两种语言的转换，即先把一句甲语转换为一句乙语，然后再把一句乙语转换为甲语；“译”是指
+					这两种语言转换的过程，把甲语转换成乙语，在译成当地语言的文字中，进而明白乙语的含义。二者构成了一般意义上的翻译，
+					让更多人了解其他语言的含义。
+					</h4>
+				</div>
+			</div>
+				<div class="headlin-top" style="margin-top: 20px;">
+				    <span style="float: left;">相关文章</span>	
+				 </div>
+				    			<ul class="mui-table-view">	
+									    <li class="mui-table-view-cell">
+									    	 <div class="video-content">
+									        	<div class="video-content-left">
+									        		<!--放文字-->
+									        		<h5>AXURE 用的溜，并不代表你就能成为一个产品经理<h5>
+									        			
+									        		<h6>作为一个产品经理确实是需要会使用Axure的，但你使用Axure并不代表你就你就能成为...</h6>
+									        	</div>
+									        	<div class="video-content-right">
+									        		<!--放图片-->
+									        		<img src="images/video.png">
+									        	</div>
+			        						</div>
+									    </li>
+									    <li class="mui-table-view-cell">
+									    	 <div class="video-content">
+									        	<div class="video-content-left">
+									        		<!--放文字-->
+									        		<h5>AXURE 用的溜，并不代表你就能成为一个产品经理<h5>
+									        			
+									        		<h6>作为一个产品经理确实是需要会使用Axure的，但你使用Axure并不代表你就你就能成为...</h6>
+									        	</div>
+									        	<div class="video-content-right">
+									        		<!--放图片-->
+									        		<img src="images/video.png">
+									        	</div>
+			        						</div>
+									    </li>
+									    <li class="mui-table-view-cell">
+									    	 <div class="video-content">
+									        	<div class="video-content-left">
+									        		<!--放文字-->
+									        		<h5>AXURE 用的溜，并不代表你就能成为一个产品经理<h5>	        			
+									        		<h6>作为一个产品经理确实是需要会使用Axure的，但你使用Axure并不代表你就你就能成为...</h6>
+									        	</div>
+									        	<div class="video-content-right">
+									        		<!--放图片-->
+									        		<img src="images/video.png">
+									        	</div>
+			        						</div>
+									    </li>
+									    <div class="video-content-big">
+									    		<div class="video-content-big-top">
+									    			<img src="images/lunbo1.jpg" />
+									    		</div> 
+									    		<div class="video-content-big-bottom">
+									    			<h5>AXURE 用的溜 共120课时<h5>
+									        		<h6>作为一个产品经理确实是需要会使用Axure的，但你使用Axure并不代表你就你就能成为...</h6>
+									    		</div>
+									    	</div>
+									</ul>
+							</div>
+						</div>	
+					</div>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+				mui.init({ 
+				pullRefresh: {
+		container: '#pullrefresh',
+		down: {
+			contentdown : " ",//可选，在下拉可刷新状态时，下拉刷新控件上显示的标题内容
+		    contentover : " ",//可选，在释放可刷新状态时，下拉刷新控件上显示的标题内容
+		    contentrefresh : " ",//可选，正在刷新状态时，下拉刷新控件上显示的标题内容
+			callback: downFn // 下拉执行函数
+		},  
+		up: {
+			contentinit:"",
+				 contentrefresh : "",//可选，正在加载状态时，上拉加载控件上显示的标题内容
+  			    contentnomore:"",//可选，请求完毕若没有更多数据时显示的提醒内容；
+			callback: upFn // 上拉执行函数 
+		}
+	} 
+	
+	  
+	  
+	
+});
+		function downFn(){
+			
+			mui('#pullrefresh').pullRefresh().endPulldownToRefresh(); 
+		}
+		function upFn(){ 
+	    	
+			mui('#pullrefresh').pullRefresh().endPulldownToRefresh(); 
+		} 
+		</script>
+	</body>
+
+</html>

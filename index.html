@@ -13,12 +13,12 @@
    
 </head>
 <body> 
-	<nav class="mui-bar mui-bar-tab"> 
+<nav class="mui-bar mui-bar-tab">
 	    <a id="defaultTab" class="mui-tab-item mui-active" href="homepagepu.html">
-	        <span class="mui-icon mui-icon-videocam"></span> 
+	        <span class="mui-icon mui-icon-videocam"></span>
 	        <span class="mui-tab-label">首页</span>
 	    </a>
-	    <a class="mui-tab-item" href="22.html">
+	    <a class="mui-tab-item" href="sort.html">
 	        <span class="mui-icon mui-icon-chatboxes"><span style="display: none;" class="mui-badge">1</span></span>
 	        <span class="mui-tab-label">分类</span>
 	    </a>
@@ -26,19 +26,19 @@
 	        <span class="mui-icon mui-icon-home"></span>
 	        <span class="mui-tab-label">论坛</span>
 	    </a>
-	     <a class="mui-tab-item" href="c.html">
+	     <a class="mui-tab-item" href="recruit.html">
 	        <span class="mui-icon mui-icon-home"></span>
 	        <span class="mui-tab-label">招聘</span>
 	    </a>
-	      <a class="mui-tab-item" href="c.html">
+	     <a class="mui-tab-item" href="setting.html">
 	        <span class="mui-icon mui-icon-home"></span>
 	        <span class="mui-tab-label">我的</span>
 	    </a>
 </nav>
 </body>
  <script type="text/javascript" charset="utf-8">
-      	 mui.init();
-      var subpages = ['homepagepu.html', '22.html', 'c.html'];
+    mui.init();
+		var subpages = ['homepagepu.html', 'sort.html', 'c.html', 'recruit.html', 'setting.html'];
 		var subpage_style = {
 			top:'0px',
 			bottom: '51px'
@@ -73,14 +73,14 @@
 			}
 			//显示目标选项卡
 			//若为iOS平台或非首次显示，则直接显示
-			if(mui.os.ios||aniShow[targetTab]){
+			if(aniShow[targetTab]){
 				plus.webview.show(targetTab);
 			}else{
 				//否则，使用fade-in动画，且保存变量
 				var temp = {};
 				temp[targetTab] = "true";
 				mui.extend(aniShow,temp);
-				plus.webview.show(targetTab,"fade-in",300);
+				plus.webview.show(targetTab);
 			}
 			//隐藏当前;
 			plus.webview.hide(activeTab);
@@ -99,7 +99,5 @@
 				defaultTab.classList.add('mui-active');
 			}
 		});
-
-		             
     </script>
 </html>
